@@ -26,7 +26,6 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.z = 20;
 scene.add(camera);
-
 //render
 const canvas = document.querySelector(".webgl");
 const render = new THREE.WebGLRenderer({ canvas });
@@ -62,7 +61,6 @@ timeline.fromTo(sphere.scale, { z: 0, x: 0, y: 0 }, { z: 1, x: 1, y: 1 });
 //change color
 window.addEventListener("mousedown", () => (mouseDown = false));
 window.addEventListener("mouseup", () => (mouseDown = true));
-
 window.addEventListener("mousemove", (e) => {
   if (mouseDown) {
     rgb = [
